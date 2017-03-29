@@ -1,5 +1,5 @@
 class Station
-
+attr_reader :station_name, :station_address, :fuel_types, :access, :distance
   def initialize(params)
     @station_name = params[:station_name]
     @station_address = get_address(params)
