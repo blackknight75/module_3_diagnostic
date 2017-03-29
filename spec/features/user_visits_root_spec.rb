@@ -9,8 +9,11 @@ describe "when use visits root" do
       fill_in "q", with: "80203"
     end
 
-    
+    click_on "Locate"
 
+    expect(current_path).to eq('/search')
+
+    
 
   end
 end
